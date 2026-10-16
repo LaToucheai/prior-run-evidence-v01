@@ -1,0 +1,374 @@
+{
+  "cases": [
+    {
+      "case": "A-valid",
+      "current_ceiling": 10,
+      "current_checker_source": "v1.py",
+      "current_input": 5,
+      "current_v01_report": {
+        "check-set": {
+          "leaf-count": 1,
+          "sha256": "f9474a19eef4e831c817e6207b256f0a24bc5e508e52199c2787a359ba67bf1d",
+          "tree-shape": "flat"
+        },
+        "checks": [
+          {
+            "check": "synthetic.integer-ceiling",
+            "discrimination": {
+              "value": "unknown"
+            },
+            "other-verdict": {
+              "value": "unknown"
+            },
+            "state": "pass"
+          }
+        ],
+        "domain": {
+          "description": "one synthetic integer input",
+          "id": "integer-example"
+        },
+        "evidence": [],
+        "fixed": {
+          "checker": "sha256:0d0648cdc022bbe23ec1753f45e4d67c69122e5105c017b902fbb001f036d89f",
+          "constraint-set": "sha256:1dbf10a88c67de2e53713bcc8fe03cd5f7be3c9be53d471345352631e973063d"
+        },
+        "format": "public-agent-conformance/report/v0.1",
+        "roll-up": {
+          "carried": 0,
+          "declared": 1,
+          "exercised": 1,
+          "fail": 0,
+          "inconclusive": 0,
+          "negative-capable": {
+            "check-identity": [
+              "synthetic.integer-ceiling"
+            ],
+            "kind": "prior-discriminating-run",
+            "reference": {
+              "leaf-count": 1,
+              "sha256": "eef2b2871fb5053dc9b22066b4ad40f7e32ab40a5ebc7b35e08cd11eb098691b",
+              "tree-shape": "flat"
+            }
+          },
+          "not-exercised": 0,
+          "pass": 1,
+          "referenced": 0,
+          "void": 0
+        }
+      },
+      "observed": {
+        "reason": "matching-binding-and-observed-fail",
+        "witness": "established"
+      },
+      "prior_ceiling": 10,
+      "prior_checker_source": "v1.py",
+      "prior_input": 11,
+      "prior_reference": {
+        "leaf-count": 1,
+        "sha256": "eef2b2871fb5053dc9b22066b4ad40f7e32ab40a5ebc7b35e08cd11eb098691b",
+        "tree-shape": "flat"
+      },
+      "prior_report": {
+        "checker_source": "v1.py",
+        "configuration": {
+          "ceiling": 10
+        },
+        "input": 11,
+        "report": {
+          "check-set": {
+            "leaf-count": 1,
+            "sha256": "7859ebf8d13262693246644f77693c31a030bcd3a4a7ee3808bb41dcea08b32b",
+            "tree-shape": "flat"
+          },
+          "checks": [
+            {
+              "check": "synthetic.integer-ceiling",
+              "discrimination": {
+                "value": "unknown"
+              },
+              "other-verdict": {
+                "value": "unknown"
+              },
+              "state": "fail"
+            }
+          ],
+          "domain": {
+            "description": "one synthetic integer input",
+            "id": "integer-example"
+          },
+          "evidence": [],
+          "fixed": {
+            "checker": "sha256:0d0648cdc022bbe23ec1753f45e4d67c69122e5105c017b902fbb001f036d89f",
+            "constraint-set": "sha256:1dbf10a88c67de2e53713bcc8fe03cd5f7be3c9be53d471345352631e973063d"
+          },
+          "format": "public-agent-conformance/report/v0.1",
+          "roll-up": {
+            "carried": 0,
+            "declared": 1,
+            "exercised": 1,
+            "fail": 1,
+            "inconclusive": 0,
+            "negative-capable": {
+              "kind": "shown-by-run"
+            },
+            "not-exercised": 0,
+            "pass": 0,
+            "referenced": 0,
+            "void": 0
+          }
+        }
+      },
+      "reference_reader": {
+        "rejections": [],
+        "shape_errors": []
+      }
+    },
+    {
+      "case": "B-configuration-drift",
+      "current_ceiling": 12,
+      "current_checker_source": "v1.py",
+      "current_input": 5,
+      "current_v01_report": {
+        "check-set": {
+          "leaf-count": 1,
+          "sha256": "f9474a19eef4e831c817e6207b256f0a24bc5e508e52199c2787a359ba67bf1d",
+          "tree-shape": "flat"
+        },
+        "checks": [
+          {
+            "check": "synthetic.integer-ceiling",
+            "discrimination": {
+              "value": "unknown"
+            },
+            "other-verdict": {
+              "value": "unknown"
+            },
+            "state": "pass"
+          }
+        ],
+        "domain": {
+          "description": "one synthetic integer input",
+          "id": "integer-example"
+        },
+        "evidence": [],
+        "fixed": {
+          "checker": "sha256:0d0648cdc022bbe23ec1753f45e4d67c69122e5105c017b902fbb001f036d89f",
+          "constraint-set": "sha256:3c3631fe260547b0c5c72ee712fc3b1e66970d75958d0f0b2196ac4164b9fdb5"
+        },
+        "format": "public-agent-conformance/report/v0.1",
+        "roll-up": {
+          "carried": 0,
+          "declared": 1,
+          "exercised": 1,
+          "fail": 0,
+          "inconclusive": 0,
+          "negative-capable": {
+            "check-identity": [
+              "synthetic.integer-ceiling"
+            ],
+            "kind": "prior-discriminating-run",
+            "reference": {
+              "leaf-count": 1,
+              "sha256": "eef2b2871fb5053dc9b22066b4ad40f7e32ab40a5ebc7b35e08cd11eb098691b",
+              "tree-shape": "flat"
+            }
+          },
+          "not-exercised": 0,
+          "pass": 1,
+          "referenced": 0,
+          "void": 0
+        }
+      },
+      "observed": {
+        "reason": "configuration-mismatch",
+        "witness": "not-established"
+      },
+      "prior_ceiling": 10,
+      "prior_checker_source": "v1.py",
+      "prior_input": 11,
+      "prior_reference": {
+        "leaf-count": 1,
+        "sha256": "eef2b2871fb5053dc9b22066b4ad40f7e32ab40a5ebc7b35e08cd11eb098691b",
+        "tree-shape": "flat"
+      },
+      "prior_report": {
+        "checker_source": "v1.py",
+        "configuration": {
+          "ceiling": 10
+        },
+        "input": 11,
+        "report": {
+          "check-set": {
+            "leaf-count": 1,
+            "sha256": "7859ebf8d13262693246644f77693c31a030bcd3a4a7ee3808bb41dcea08b32b",
+            "tree-shape": "flat"
+          },
+          "checks": [
+            {
+              "check": "synthetic.integer-ceiling",
+              "discrimination": {
+                "value": "unknown"
+              },
+              "other-verdict": {
+                "value": "unknown"
+              },
+              "state": "fail"
+            }
+          ],
+          "domain": {
+            "description": "one synthetic integer input",
+            "id": "integer-example"
+          },
+          "evidence": [],
+          "fixed": {
+            "checker": "sha256:0d0648cdc022bbe23ec1753f45e4d67c69122e5105c017b902fbb001f036d89f",
+            "constraint-set": "sha256:1dbf10a88c67de2e53713bcc8fe03cd5f7be3c9be53d471345352631e973063d"
+          },
+          "format": "public-agent-conformance/report/v0.1",
+          "roll-up": {
+            "carried": 0,
+            "declared": 1,
+            "exercised": 1,
+            "fail": 1,
+            "inconclusive": 0,
+            "negative-capable": {
+              "kind": "shown-by-run"
+            },
+            "not-exercised": 0,
+            "pass": 0,
+            "referenced": 0,
+            "void": 0
+          }
+        }
+      },
+      "reference_reader": {
+        "rejections": [],
+        "shape_errors": []
+      }
+    },
+    {
+      "case": "C-revision-drift",
+      "current_ceiling": 10,
+      "current_checker_source": "v1.py",
+      "current_input": 5,
+      "current_v01_report": {
+        "check-set": {
+          "leaf-count": 1,
+          "sha256": "f9474a19eef4e831c817e6207b256f0a24bc5e508e52199c2787a359ba67bf1d",
+          "tree-shape": "flat"
+        },
+        "checks": [
+          {
+            "check": "synthetic.integer-ceiling",
+            "discrimination": {
+              "value": "unknown"
+            },
+            "other-verdict": {
+              "value": "unknown"
+            },
+            "state": "pass"
+          }
+        ],
+        "domain": {
+          "description": "one synthetic integer input",
+          "id": "integer-example"
+        },
+        "evidence": [],
+        "fixed": {
+          "checker": "sha256:0d0648cdc022bbe23ec1753f45e4d67c69122e5105c017b902fbb001f036d89f",
+          "constraint-set": "sha256:1dbf10a88c67de2e53713bcc8fe03cd5f7be3c9be53d471345352631e973063d"
+        },
+        "format": "public-agent-conformance/report/v0.1",
+        "roll-up": {
+          "carried": 0,
+          "declared": 1,
+          "exercised": 1,
+          "fail": 0,
+          "inconclusive": 0,
+          "negative-capable": {
+            "check-identity": [
+              "synthetic.integer-ceiling"
+            ],
+            "kind": "prior-discriminating-run",
+            "reference": {
+              "leaf-count": 1,
+              "sha256": "8fb497f3197548500bde6e819a3f6343928b4d6ac7a0641ecb2da898c81f9792",
+              "tree-shape": "flat"
+            }
+          },
+          "not-exercised": 0,
+          "pass": 1,
+          "referenced": 0,
+          "void": 0
+        }
+      },
+      "observed": {
+        "reason": "checker-revision-mismatch",
+        "witness": "not-established"
+      },
+      "prior_ceiling": 10,
+      "prior_checker_source": "v0.py",
+      "prior_input": 11,
+      "prior_reference": {
+        "leaf-count": 1,
+        "sha256": "8fb497f3197548500bde6e819a3f6343928b4d6ac7a0641ecb2da898c81f9792",
+        "tree-shape": "flat"
+      },
+      "prior_report": {
+        "checker_source": "v0.py",
+        "configuration": {
+          "ceiling": 10
+        },
+        "input": 11,
+        "report": {
+          "check-set": {
+            "leaf-count": 1,
+            "sha256": "7859ebf8d13262693246644f77693c31a030bcd3a4a7ee3808bb41dcea08b32b",
+            "tree-shape": "flat"
+          },
+          "checks": [
+            {
+              "check": "synthetic.integer-ceiling",
+              "discrimination": {
+                "value": "unknown"
+              },
+              "other-verdict": {
+                "value": "unknown"
+              },
+              "state": "fail"
+            }
+          ],
+          "domain": {
+            "description": "one synthetic integer input",
+            "id": "integer-example"
+          },
+          "evidence": [],
+          "fixed": {
+            "checker": "sha256:e63d1ccb71931f0e7cbe2d82c62a22deea50125f70d5a67f40c691e02ba0a126",
+            "constraint-set": "sha256:1dbf10a88c67de2e53713bcc8fe03cd5f7be3c9be53d471345352631e973063d"
+          },
+          "format": "public-agent-conformance/report/v0.1",
+          "roll-up": {
+            "carried": 0,
+            "declared": 1,
+            "exercised": 1,
+            "fail": 1,
+            "inconclusive": 0,
+            "negative-capable": {
+              "kind": "shown-by-run"
+            },
+            "not-exercised": 0,
+            "pass": 0,
+            "referenced": 0,
+            "void": 0
+          }
+        }
+      },
+      "reference_reader": {
+        "rejections": [],
+        "shape_errors": []
+      }
+    }
+  ],
+  "experiment": "prior-run-three-controlled-comparisons"
+}

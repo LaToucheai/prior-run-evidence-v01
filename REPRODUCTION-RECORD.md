@@ -2,7 +2,7 @@
 
 Supplementary reproduction evidence for the five-case synthetic single-check prior-run experiment. This new record does not modify the pinned commit or the files listed in `SHA256SUMS`.
 
-## Exact citation approved by the operator
+## Reproduction evidence — Guigui Wang
 
 Second-operator reproduction — Guigui Wang (Correctover — AI Reliability)
 

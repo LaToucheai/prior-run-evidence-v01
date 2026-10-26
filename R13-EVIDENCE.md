@@ -2,7 +2,7 @@
 
 This is the **producer-maintained supplementary evidence record** for the R13 result referenced in the [separately maintained W3C reporting-format paper provenance appendix](https://github.com/probityai/agent-evidence-vectors/blob/main/interop/w3c-v01-appendix/README.md). It is not a modification of the paper editor's R13 row, paper acceptance, a W3C assessment, or a new conformance claim.
 
-## Exact citation approved by the operator
+## Reproduction evidence — Guigui Wang
 
 Second-operator reproduction — Guigui Wang (Correctover — AI Reliability)
 

@@ -27,9 +27,9 @@ The three contributions below have **different evidence histories**. They should
 
 | Contributor | Documented contribution | Evidence boundary |
 | --- | --- | --- |
-| **Nicolás Rocchia** | Reproduced the [original three-case public release](https://github.com/LaToucheai/prior-run-evidence-v01/tree/69819ec8501a3e9e56acacefd84dbede91d2948a) (3/3 cases, 7/7 tests, 14/14 hashes); critically reviewed the revisions, including report-binding and leaf-count issues; reproduced the private v0.4 package on Linux x86_64/Python 3.13.16 (5/5 cases, 23/23 tests, 15/15 hashes). See the [study method and revision history](https://github.com/LaToucheai/prior-run-evidence-v01/blob/main/README.md) and [changelog](https://github.com/LaToucheai/prior-run-evidence-v01/blob/main/CHANGELOG.md). | Reproduction and targeted technical criticism of the producer's code; not independent validation of its interpretation. |
+| **Nicolás Rocchia** | Reproduced the [original three-case public release](https://github.com/LaToucheai/prior-run-evidence-v01/tree/69819ec8501a3e9e56acacefd84dbede91d2948a) (3/3 cases, 7/7 tests, 14/14 hashes); critically reviewed the revisions, including report-binding and leaf-count issues; reproduced the private v0.4 package on Linux x86_64/Python 3.13.16 (5/5 cases, 23/23 tests, 15/15 hashes). See the [study method and revision history](README.md) and [changelog](CHANGELOG.md). | Reproduction and targeted technical criticism of the producer's code; not independent validation of its interpretation. |
 | **Yasha Khandelwal** | Reported a separate rerun against the published pinned revision on 24 October 2026, reproducing five expected outcomes, 23 tests and 15 hashes. The report records its own exposure conditions. | Same published implementation; not a new independently written implementation or conformance determination. |
-| **Guigui Wang (Correctover — AI Reliability)** | Completed a fresh-clone second-operator rerun on 20 October 2026 using Linux x86_64 and Python 3.13.12 (standard library only). Reported 5/5 cases, 23/23 tests, 15/15 SHA-256 checks. | Read [Guigui's approved attribution and exact scope](https://github.com/LaToucheai/prior-run-evidence-v01/blob/main/REPRODUCTION-RECORD.md). No wider endorsement, certification, audit or W3C approval is implied. |
+| **Guigui Wang (Correctover — AI Reliability)** | Completed a fresh-clone second-operator rerun on 20 October 2026 using Linux x86_64 and Python 3.13.12 (standard library only). Reported 5/5 cases, 23/23 tests, 15/15 SHA-256 checks. | Read [Guigui's approved attribution and exact scope](REPRODUCTION-RECORD.md). No wider endorsement, certification, audit or W3C approval is implied. |
 
 The pinned experiment and source-file hashes are unchanged by these later supplementary records.
 
@@ -43,10 +43,10 @@ python3 -m unittest -v test_experiment.py
 sha256sum -c SHA256SUMS
 ```
 
-The main [study README](https://github.com/LaToucheai/prior-run-evidence-v01/blob/main/README.md) documents the cases, assumptions, technical revisions and limits in detail.
+The main [study README](README.md) documents the cases, assumptions, technical revisions and limits in detail.
 
 ## R13 paper evidence
 
-This study is associated with the R13 evidence row in the [separately maintained reporting-format paper appendix](https://github.com/probityai/agent-evidence-vectors/blob/main/interop/w3c-v01-appendix/README.md). La Touche's [R13 supporting evidence](https://github.com/LaToucheai/prior-run-evidence-v01/blob/main/R13-EVIDENCE.md) includes the exact citation Guigui approved for the paper evidence record. Whether or how the external maintainers incorporate later evidence remains their editorial decision.
+This study is associated with the R13 evidence row in the [separately maintained reporting-format paper appendix](https://github.com/probityai/agent-evidence-vectors/blob/main/interop/w3c-v01-appendix/README.md). La Touche's [R13 supporting evidence](R13-EVIDENCE.md) includes the exact citation Guigui approved for the paper evidence record. Whether or how the external maintainers incorporate later evidence remains their editorial decision.
 
 **Research boundary:** Reproducing the study's outputs does not establish independent verification of the historical event, scientific peer review, W3C endorsement, Responsibility Infrastructure interoperability or conformance, regulatory approval, or validation of the L-SCAN commercial product.

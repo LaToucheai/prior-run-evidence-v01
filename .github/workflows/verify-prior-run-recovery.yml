@@ -1,0 +1,41 @@
+name: Prior-run research clean-checkout verification
+on:
+  push:
+    branches:
+      - audit/clean-checkout-verification-20261028
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout exact Git commit
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Record checkout
+        run: |
+          echo "COMMIT=$(git rev-parse HEAD)"
+          echo "BRANCH=$(git branch --show-current)"
+          python3 --version
+      - name: Run five-case experiment
+        run: python3 experiment.py
+      - name: Run all unit tests
+        run: python3 -m unittest -v test_experiment.py
+      - name: Verify all frozen file checksums
+        run: sha256sum -c SHA256SUMS
+      - name: Check repository unchanged by execution
+        run: |
+          git status --short
+          test -z "$(git status --porcelain)"
